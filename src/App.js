@@ -1,8 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
+import Home from "./components/Home";
 import Login from "./components/Login";
 import Nav from "./components/Nav";
+import Signup from "./components/Signup";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Nav></Nav>
       <div className="custome-container">
         <Routes>
+          <Route path="/" element={<Home></Home>} />
+          <Route path="/signup" element={<Signup></Signup>} />
           <Route path="/login" element={<Login></Login>} />
           <Route path="*" element={<h1>page not found</h1>} />
         </Routes>

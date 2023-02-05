@@ -18,10 +18,12 @@ const Login = () => {
       <Form className="border p-4">
         <h1>Sign In</h1>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label className="fw-bold">
-            Email address or mobile phone number
-          </Form.Label>
+          <Form.Label className="fw-bold">Email address</Form.Label>
           <Form.Control type="email" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label className="fw-bold">Password</Form.Label>
+          <Form.Control type="password" />
         </Form.Group>
         <Button
           className="w-100 text-dark border-0"

@@ -95,7 +95,7 @@ const Header = () => {
               style={{ cursor: "pointer" }}
             >
               <input
-                checked
+                defaultChecked
                 id="en"
                 type="radio"
                 name="language"
