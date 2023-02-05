@@ -6,7 +6,9 @@ const GlobalContext = createContext({});
 const ContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <GlobalContext.Provider value={{ state, dispatch }}>
+    <GlobalContext.Provider
+      value={{ basket: state.basket, user: state.user, dispatch }}
+    >
       {children}
     </GlobalContext.Provider>
   );
