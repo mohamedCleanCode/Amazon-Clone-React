@@ -70,6 +70,48 @@ const Header = () => {
         className="language text-white"
         style={{ width: "75px", cursor: "pointer" }}
       >
+        <div className="language-options p-3 bg-white border rounded">
+          <form>
+            <div
+              className="language-option mb-3 border-bottom text-dark"
+              style={{ cursor: "pointer" }}
+            >
+              <input
+                id="ar"
+                type="radio"
+                name="language"
+                style={{ cursor: "pointer" }}
+              />
+              <label
+                className="ms-2"
+                htmlFor="ar"
+                style={{ cursor: "pointer" }}
+              >
+                العربية- AR
+              </label>
+            </div>
+            <div
+              className="language-option mb-3 border-bottom text-dark"
+              style={{ cursor: "pointer" }}
+            >
+              <input
+                checked
+                id="en"
+                type="radio"
+                name="language"
+                style={{ cursor: "pointer" }}
+              />
+              <label
+                className="ms-2"
+                htmlFor="en"
+                style={{ cursor: "pointer" }}
+              >
+                English - EN
+              </label>
+            </div>
+            <Link to="/learn-more">Learn more</Link>
+          </form>
+        </div>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/220px-Flag_of_Egypt.svg.png"
           alt="Egypt"
@@ -79,21 +121,27 @@ const Header = () => {
             marginRight: "10px",
           }}
         />
-        En <i className="fa-solid fa-arrow-down"></i>
+        EN <i className="fa-solid fa-arrow-down"></i>
       </div>
-      <div className="user" style={{ width: "140px", cursor: "pointer" }}>
-        <span className="text-white-50">Hello Sign in</span>
+      <Link
+        to="/login"
+        className="user"
+        style={{ width: "140px", cursor: "pointer" }}
+      >
+        <span className="text-white-50">Hello, Sign in</span>
         <p className="m-0 text-white">
           Accounts & Lists <i className="fa-solid fa-arrow-down"></i>
         </p>
-      </div>
-      <div
+      </Link>
+      <Link
+        to="/orders"
         className="orders text-white"
         style={{ width: "60px", cursor: "pointer" }}
       >
         Orders
-      </div>
-      <div
+      </Link>
+      <Link
+        to="/cart"
         className="cart text-white position-relative"
         style={{ width: "85px", cursor: "pointer" }}
       >
@@ -116,7 +164,7 @@ const Header = () => {
           }}
         ></i>
         <span>Cart</span>
-      </div>
+      </Link>
     </div>
   );
 };
