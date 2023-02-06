@@ -13,7 +13,7 @@ const Header = () => {
       style={{
         backgroundColor: "var(--primary)",
         hight: "60px",
-        width: "1366px",
+        width: "100%",
       }}
     >
       <Link to="/" className="logo" style={{ width: "130px" }}>

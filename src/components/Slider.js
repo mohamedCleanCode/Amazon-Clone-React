@@ -2,7 +2,7 @@ import React from "react";
 
 const Slider = () => {
   return (
-    <div className="carousel" style={{ height: "calc(100vh - 120px)" }}>
+    <div className="carousel" style={{ height: "calc(100vh - 136px)" }}>
       <div
         id="carouselExampleControls"
         class="carousel slide h-100"
