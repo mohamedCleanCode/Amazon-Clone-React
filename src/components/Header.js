@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/imgs/logo.png";
+import { useData } from "../context/GlobalContext";
 import "./Header.css";
 
 const Header = () => {
+  const { user } = useData();
   return (
     <div
       className="header py-2 px-3 d-flex justify-content-between align-items-center"
@@ -128,7 +130,7 @@ const Header = () => {
         className="user"
         style={{ width: "140px", cursor: "pointer" }}
       >
-        <span className="text-white-50">Hello, Sign in</span>
+        <span className="text-white-50">Hello {user ? user : "Sign In"}</span>
         <p className="m-0 text-white">
           Accounts & Lists <i className="fa-solid fa-arrow-down"></i>
         </p>
