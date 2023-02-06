@@ -4,3 +4,7 @@
 .navbar .links li a {
   color: white;
 }
+.cards {
+  position: relative;
+  top: -180px;
+}
