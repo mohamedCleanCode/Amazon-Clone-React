@@ -18,7 +18,7 @@ const ContextProvider = ({ children }) => {
   const signin = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
-  const signout = (email, password) => {
+  const signout = () => {
     return signOut(auth);
   };
   useEffect(() => {
@@ -31,7 +31,7 @@ const ContextProvider = ({ children }) => {
     return () => {
       unsubscripe();
     };
-  }, [state]);
+  }, [state.user]);
   return (
     <GlobalContext.Provider
       value={{

@@ -31,7 +31,7 @@ const Login = () => {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1200px-Amazon_logo.svg.png"
           alt="Amazon Logo"
-          style={{ width: "150px", height: "150px", objectFit: "contain" }}
+          style={{ width: "150px", height: "110px", objectFit: "contain" }}
         />
       </Link>
       <Form
